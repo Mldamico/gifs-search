@@ -14,4 +14,8 @@ export class SidebarComponent implements OnInit {
   get tags() {
     return this.gifsService.tagsHistory;
   }
+
+  searchTag(tag: string) {
+    this.gifsService.searchTag(tag);
+  }
 }
